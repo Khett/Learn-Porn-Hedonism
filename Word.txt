@@ -1,2 +1,3 @@
 print ("Bad word");
 print ("Don`t read it")
+print ("I sey don`t read")
