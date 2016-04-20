@@ -1,2 +1,2 @@
-print ("Bad word");
-print ("Don`t read it")
+print ("Bad word)");
+print ("Don`t read it)")
