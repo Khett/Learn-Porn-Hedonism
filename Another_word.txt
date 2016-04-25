@@ -1,2 +1,0 @@
-print ("Nope");
-print ("Never");
