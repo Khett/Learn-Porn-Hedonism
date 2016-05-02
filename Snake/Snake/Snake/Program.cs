@@ -16,12 +16,21 @@ namespace Snake
             Point p2 = new Point(4, 5, '#');
             p2.Draw();
 
-            HorisontalLine hline = new HorisontalLine(5, 10, 8, '+');
-            hline.Drow();
+            Console.SetBufferSize(80, 25);          //Set window size
 
-            VerticalLine vline = new VerticalLine(5, 10, 8, '+');
-            vline.Drow();
 
+            // create frame
+            HorisontalLine upline = new HorisontalLine(0, 78, 0, '+' );
+            HorisontalLine downline = new HorisontalLine(0, 78, 24, '+' );
+
+            VerticalLine leftline = new VerticalLine(0, 24, 0, '+' );
+            VerticalLine rightline = new VerticalLine(0, 24, 78, '+' );
+
+            // paint frame
+            upline.Drow();
+            downline.Drow();
+            leftline.Drow();
+            rightline.Drow();
 
             Console.ReadLine();
         }
