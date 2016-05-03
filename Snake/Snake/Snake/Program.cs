@@ -10,12 +10,8 @@ namespace Snake
     {
         static void Main(string[] args)
         {
-            Point p1 = new Point(1, 3, '*');
-            p1.Draw();
-
-            Point p2 = new Point(4, 5, '#');
-            p2.Draw();
-
+           
+            
             Console.SetBufferSize(80, 25);          //Set window size
 
 
@@ -31,6 +27,12 @@ namespace Snake
             downline.Drow();
             leftline.Drow();
             rightline.Drow();
+
+            //  Drow point
+            Point p = new Point(4, 5, '*');
+            //  Make Snake
+            Snake snake = new Snake(p, 4, Direction.RIGHT);
+
 
             Console.ReadLine();
         }
